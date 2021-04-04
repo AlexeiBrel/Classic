@@ -9,7 +9,7 @@ $maxWidth: 1440;
 }
 
 body {
-    background: #F0F5FB;
+    background: #dcecff;
 }
 
 .wrapper {
@@ -117,7 +117,7 @@ body {
         article {
             text-align: center;
             h1 {
-                @include adaptiv-font(40, 24);
+                @include adaptiv-font(46, 24);
                 font-family: $font-family;
             }
             .subtitle {
@@ -158,7 +158,7 @@ body {
                 border-radius: 50%;
                 border: none;
                 background: #e7e7e7;
-                box-shadow: 0 0 12px 8px rgba(68, 201, 6, 0.61);
+                box-shadow: 0 0 10px 5px rgba(68, 201, 6, 0.61);
                 cursor: pointer;
                 transition: all.2s ease;
                 &:hover {
@@ -174,9 +174,124 @@ body {
     max-width: 1160px;
     margin: 25px auto 0;
     padding: 0 10px;
+    &__dishes {
+        margin-top: 100px;
+        text-align: center;
+        h2 {
+            font-family: $font-family;
+            @include adaptiv-font(46, 24);
+        }
+        .menu__dishes {
+            margin-top: 50px;
+            .menu__list {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            li {
+                display: inline;
+                text-align: center;
+            }
+            a {
+                @include adaptiv-font(18, 14);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 130px;
+                height: 50px;
+                font-family: $font-family;
+                font-weight: 600;
+                color: #ffffff;
+                background: #426c74e3;
+                border-radius: 45px;
+                transition: all.2s ease;
+                &:hover {
+                    background: #59AAF1;
+                }
+            }
+        }
+    }
+    &__cards {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 280px));
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        margin: 50px 0 0;
+        .card {
+            height: auto;
+            background: #F6F6F6;
+            box-shadow: 6px 6px 16px rgba(163, 163, 163, 0.6), -8px -8px 16px #FFFFFF, inset 4px 4px 16px rgba(203, 203, 203, 0.25);
+            border-radius: 5px;
+            padding: 10px;
+            margin: 15px 10px;
+            .card__img {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px;
+                img {
+                    width: 200px;
+                    height: 203px;
+                }
+            }
+            article {
+                max-width: 24 0px;
+                .article__title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h3 {
+                        display: inline;
+                        font-family: $font-family;
+                        font-size: 18px;
+                        text-align: left;
+                        color: #242424;
+                    }
+                    span {
+                        color: rgb(26, 26, 26);
+                        font-family: $font-family;
+                    }
+                }
+                .description {
+                    margin-top: 10px;
+                    font-size: 14px;
+                    font-family: $font-family;
+                }
+                .article__btn {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 15px;
+                    .prise {
+                        color: #535353;
+                        font-family: $font-family;
+                        font-weight: 600;
+                        font-size: 25px;
+                        text-align: center;
+                    }
+                    button {
+                        width: 40px;
+                        height: 40px;
+                        border: none;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        background: url(../img/icon/basket.svg) center no-repeat, #F23F0E;
+                        box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
+                        transition: all.2s ease;
+                        &:hover {
+                            background: url(../img/icon/basket.svg) center no-repeat, #0e69f2;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1024px) {
+    .header {
+        height: 660px;
+    }
     .header::before {
         top: 250px;
     }
@@ -188,6 +303,11 @@ body {
             &::before {
                 right: 140px;
             }
+        }
+    }
+    .main {
+        &__dishes {
+            margin-top: 100px;
         }
     }
 }
@@ -219,7 +339,7 @@ body {
                 top: -100%;
                 left: 0;
                 transition: all.5s ease .1s;
-                background: rgb(75, 75, 75);
+                background: linear-gradient(66deg, #e38010, #1535bf);
                 li {
                     width: 100%;
                 }
@@ -304,8 +424,26 @@ body {
     }
 }
 
+@media screen and (max-width:700px) {
+    .main {
+        .menu__dishes {
+            li {
+                padding-bottom: 20px;
+            }
+            a {
+                width: 115px;
+                height: 45px;
+            }
+        }
+        &__cards {
+            margin-top: 20px;
+        }
+    }
+}
+
 @media screen and (max-width: 539px) {
     .header {
+        height: 510px;
         grid-template-rows: 10px 70px 1fr;
         &::before {
             top: 200px;
@@ -317,5 +455,49 @@ body {
         h1 {
             margin: 0.4em 0;
         }
+    }
+    .main {
+        .menu__dishes {
+            margin-top: 25px;
+            .menu__list {
+                display: block;
+            }
+            li {
+                display: inline-block;
+                width: 49%;
+            }
+            a {
+                margin: 0 auto;
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .header {
+        height: 470px;
+        grid-template-rows: 10px 70px 1fr;
+        &::before {
+            top: 205px;
+            height: 400px;
+        }
+        &__contact {
+            display: none;
+        }
+        h1 {
+            margin: 0.4em 0;
+        }
+    }
+    .main {
+        &__dishes {
+            margin-top: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .header {
+        height: 400px;
     }
 }
