@@ -1,0 +1,29 @@
+$font-family: Montserrat;
+$maxWidth: 2560;
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 320;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@mixin phone() {
+    display: flex;
+    align-items: center;
+    font-family: $font-family;
+    font-weight: 600;
+    color: #000000;
+    position: relative;
+    transition: color.2s ease-in-out;
+    padding-left: 45px;
+    &::before {
+        content: "";
+        position: absolute;
+        background: url(../img/icon/phone.svg) no-repeat;
+        width: 42px;
+        height: 42px;
+        left: -5px;
+    }
+    &:hover {
+        color: blue;
+    }
+}
