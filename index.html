@@ -7,17 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/animate.css">
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="close">
+            <div class="close wow bounceInDown" data-wow-delay="0.3s">
                 <a href="#" class="menu-btn">
                     <span></span>
                 </a>
             </div>
-            <nav class="header__menu">
+            <nav class="header__menu wow bounceInDown" data-wow-delay="0.3s">
                 <ul class="header__list">
                     <li>
                         <a href="##">Payment</a>
@@ -31,14 +32,14 @@
 
                 </ul>
             </nav>
-            <div class="header__logo">
-                <img src="/img/icon/logo.svg" alt="Classic">
+            <div class="header__logo wow bounceInDown" data-wow-delay="0.3s">
+                <img src="img/icon/logo.svg" alt="Classic">
             </div>
-            <div class="header__contact">
+            <div class="header__contact wow bounceInDown" data-wow-delay="0.3s">
                 <time class="work__time">Daily 11am - 9pm</time>
                 <a class="phone" href="tel:0 800 33 08 98">0 800 33 08 98</a>
             </div>
-            <div class="header__title">
+            <div class="header__title ">
                 <article>
                     <h1>Food delivery in Kovel</h1>
                     <div class="subtitle">
@@ -52,7 +53,7 @@
             </div>
         </header>
         <main class="main">
-            <section class="main__dishes">
+            <section class="main__dishes wow bounceInUp" data-wow-delay="0.2s">
                 <h2>Popular dishes</h2>
                 <nav class="menu__dishes">
                     <ul class="menu__list">
@@ -71,140 +72,198 @@
                     </ul>
                 </nav>
             </section>
-            <section class="main__cards">
-                <div class="card">
-                    <div class="card__img">
-                        <img src="img/pizza/pizza_1.png" alt="Tedesca">
+            <section class="main__cards wow bounceInUp" data-wow-delay="0.2s">
+                <div class="cards__content">
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="img/pizza/pizza_1.png" alt="Tedesca">
+                        </div>
+                        <article>
+                            <div class="article__title">
+                                <h3>Tedesca</h3>
+                                <span>32cm</span>
+                            </div>
+                            <p class="description">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
+                            <div class="article__btn">
+                                <p class="prise">15$</p>
+                                <button class="basket"></button>
+                            </div>
+                        </article>
                     </div>
-                    <article>
-                        <div class="article__title">
-                            <h3>Tedesca</h3>
-                            <span>32cm</span>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="img/pizza/pizza_2.png" alt="Tricolore">
                         </div>
-                        <p class="description">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
-                        <div class="article__btn">
-                            <p class="prise">15$</p>
-                            <button class="basket"></button>
+                        <article>
+                            <div class="article__title">
+                                <h3>Tricolore</h3>
+                                <span>32cm</span>
+                            </div>
+                            <p class="description">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
+                            <div class="article__btn">
+                                <p class="prise">17$</p>
+                                <button class="basket"></button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="img/pizza/pizza_3.png" alt="Caprese">
                         </div>
-                    </article>
+                        <article>
+                            <div class="article__title">
+                                <h3>Caprese</h3>
+                                <span>32cm</span>
+                            </div>
+                            <p class="description">Dough, mozzarella, barrel, eggs, Parmesan cheese</p>
+                            <div class="article__btn">
+                                <p class="prise">20$</p>
+                                <button class="basket"></button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="img/pizza/pizza_4.png" alt="Padana">
+                        </div>
+                        <article>
+                            <div class="article__title">
+                                <h3>Padana</h3>
+                                <span>32cm</span>
+                            </div>
+                            <p class="description">Dough, mozzarella, barrel, eggs, Parmesan cheese</p>
+                            <div class="article__btn">
+                                <p class="prise">17$ </p>
+                                <button class="basket"></button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="img/pizza/pizza_5.png" alt="Boscaiola">
+                        </div>
+                        <article>
+                            <div class="article__title">
+                                <h3>Boscaiola</h3>
+                                <span>32cm</span>
+                            </div>
+                            <p class="description">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
+                            <div class="article__btn">
+                                <p class="prise">20$</p>
+                                <button class="basket"></button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="img/pizza/pizza_6.png" alt="Calzone">
+                        </div>
+                        <article>
+                            <div class="article__title">
+                                <h3>Calzone</h3>
+                                <span>32cm</span>
+                            </div>
+                            <p class="description">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
+                            <div class="article__btn">
+                                <p class="prise">15$</p>
+                                <button class="basket"></button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="img/pizza/pizza_7.png" alt="Emiliana">
+                        </div>
+                        <article>
+                            <div class="article__title">
+                                <h3>Emiliana</h3>
+                                <span>32cm</span>
+                            </div>
+                            <p class="description">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
+                            <div class="article__btn">
+                                <p class="prise">22$</p>
+                                <button class="basket"></button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="img/pizza/pizza_1.png" alt="Montanara">
+                        </div>
+                        <article>
+                            <div class="article__title">
+                                <h3>Montanara</h3>
+                                <span>32cm</span>
+                            </div>
+                            <p class="description">Dough, mozzarella, barrel, eggs, Parmesan cheese</p>
+                            <div class="article__btn">
+                                <p class="prise">20$</p>
+                                <button class="basket"></button>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="card__img">
-                        <img src="img/pizza/pizza_2.png" alt="Tricolore">
-                    </div>
-                    <article>
-                        <div class="article__title">
-                            <h3>Tricolore</h3>
-                            <span>32cm</span>
-                        </div>
-                        <p class="description">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
-                        <div class="article__btn">
-                            <p class="prise">17$</p>
-                            <button class="basket"></button>
-                        </div>
-                    </article>
+                <div class="dishes__btn">
+                    <button class="dishes__cart"></button>
                 </div>
-                <div class="card">
-                    <div class="card__img">
-                        <img src="img/pizza/pizza_3.png" alt="Caprese">
+            </section>
+            <section class="main__social-network wow bounceInLeft" data-wow-delay="0.2s">
+                <div class="sosocial-network__content">
+                    <div class="social-network">
+                        <p>Instagram:<a href="##">@classic_kovel</a></p>
                     </div>
-                    <article>
-                        <div class="article__title">
-                            <h3>Caprese</h3>
-                            <span>32cm</span>
-                        </div>
-                        <p class="description">Dough, mozzarella, barrel, eggs, Parmesan cheese</p>
-                        <div class="article__btn">
-                            <p class="prise">20$</p>
-                            <button class="basket"></button>
-                        </div>
-                    </article>
                 </div>
-                <div class="card">
-                    <div class="card__img">
-                        <img src="img/pizza/pizza_4.png" alt="Padana">
-                    </div>
-                    <article>
-                        <div class="article__title">
-                            <h3>Padana</h3>
-                            <span>32cm</span>
-                        </div>
-                        <p class="description">Dough, mozzarella, barrel, eggs, Parmesan cheese</p>
-                        <div class="article__btn">
-                            <p class="prise">17$ </p>
-                            <button class="basket"></button>
-                        </div>
-                    </article>
+                <div class="photo">
+                    <img src="img/photo/img_1.png" alt="classic_kovel">
                 </div>
-                <div class="card">
-                    <div class="card__img">
-                        <img src="img/pizza/pizza_5.png" alt="Boscaiola">
-                    </div>
-                    <article>
-                        <div class="article__title">
-                            <h3>Boscaiola</h3>
-                            <span>32cm</span>
-                        </div>
-                        <p class="description">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
-                        <div class="article__btn">
-                            <p class="prise">20$</p>
-                            <button class="basket"></button>
-                        </div>
-                    </article>
+                <div class="photo">
+                    <img src="img/photo/img_2.png" alt="classic_kovel">
                 </div>
-                <div class="card">
-                    <div class="card__img">
-                        <img src="img/pizza/pizza_6.png" alt="Calzone">
-                    </div>
-                    <article>
-                        <div class="article__title">
-                            <h3>Calzone</h3>
-                            <span>32cm</span>
-                        </div>
-                        <p class="description">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
-                        <div class="article__btn">
-                            <p class="prise">15$</p>
-                            <button class="basket"></button>
-                        </div>
-                    </article>
+                <div class="photo">
+                    <img src="img/photo/img_3.png" alt="classic_kovel">
                 </div>
-                <div class="card">
-                    <div class="card__img">
-                        <img src="img/pizza/pizza_7.png" alt="Emiliana">
-                    </div>
-                    <article>
-                        <div class="article__title">
-                            <h3>Emiliana</h3>
-                            <span>32cm</span>
-                        </div>
-                        <p class="description">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
-                        <div class="article__btn">
-                            <p class="prise">22$</p>
-                            <button class="basket"></button>
-                        </div>
-                    </article>
+                <div class="photo">
+                    <img src="img/photo/img_4.png" alt="classic_kovel">
                 </div>
-                <div class="card">
-                    <div class="card__img">
-                        <img src="img/pizza/pizza_1.png" alt="Montanara">
-                    </div>
-                    <article>
-                        <div class="article__title">
-                            <h3>Montanara</h3>
-                            <span>32cm</span>
-                        </div>
-                        <p class="description">Dough, mozzarella, barrel, eggs, Parmesan cheese</p>
-                        <div class="article__btn">
-                            <p class="prise">20$</p>
-                            <button class="basket"></button>
-                        </div>
-                    </article>
+                <div class="photo">
+                    <img src="img/photo/img_5.png" alt="classic_kovel">
+                </div>
+                <div class="photo">
+                    <img src="img/photo/img_6.png" alt="classic_kovel">
                 </div>
             </section>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="footer__title wow bounceInDown" data-wow-delay="0.2s">
+                <h2>Fill out the form and we will call you</h2>
+            </div>
+            <form action="#">
+                <div class="form__body wow bounceInDown" data-wow-delay="0.2s">
+                    <input type="text" placeholder="Your name">
+                    <input type="text" placeholder="Phone number">
+                    <button type="submit">Сall back</button>
+                </div>
+            </form>
+            <div class="footer__bootom wow bounceInUp">
+                <div class="footer__contact">
+                    <a class="phone" href="tel:0 800 33 08 98">0 800 33 08 98</a>
+                    <time class="work__time">Daily 11am - 9pm</time>
+                </div>
+                <div class="footer__logo">
+                    <img src="img/icon/logo.svg" alt="Classic">
+                </div>
+                <div class="footer__copy">
+                    <p>© Classic Family Restaurant</p>
+                </div>
+            </div>
+        </footer>
     </div>
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 
 </html>
